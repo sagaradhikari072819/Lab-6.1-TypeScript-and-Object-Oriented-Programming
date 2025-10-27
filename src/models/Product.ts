@@ -1,6 +1,7 @@
 // Properties: sku (string), name (string), price (number).
 // Methods:
-import{calculateTax} from "../utils/taxCalculator"
+// import{calculateTax} from "../utils/taxCalculator"
+
 export default class Product {
     sku: string;
     name: string;
@@ -21,6 +22,6 @@ displayDetails(): string{
 // getPriceWithTax() - a method that calculates the final price of the product with tax.
 
 getPriceWithTax(): number {
-    return this.price + ((this.price * taxRate)/100)
+    return this.price * 1.1;
 }
 }

@@ -13,10 +13,10 @@ export default class DigitalProduct extends Product{
     }
     // Override the getPriceWithTax() method to calculate a final price with no tax, since the digital products do not require tax.
     getpriceWithTax(): number {
-    return this.price
+    return this.price 
 }
 get formattedFileSize(){
-    return this.fileSize/(1024 * 1024);
+    return this.fileSize/(1024 * 1024) + "MB";
 }
 
 }
