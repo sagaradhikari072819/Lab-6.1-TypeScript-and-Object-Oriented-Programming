@@ -40,7 +40,7 @@ for (const product of sortProducts) {
     
     if (product instanceof PhysicalProduct) {
          console.log(`Price With Bulk Discount (if available): $${product.price}`);
-        console.log(`Weight: ${product.weightInKg} kg`);
+        console.log(`Weight: ${product.weightInKg} `);
         
     } else if (product instanceof DigitalProduct) {
         console.log(`Digital Product Price: $${product.price}`);

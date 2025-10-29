@@ -16,7 +16,7 @@ export default class DigitalProduct extends Product{
     return this.price 
 }
 get formattedFileSize(){
-    return this.fileSize/(1024 * 1024) + "MB";
+    return this.fileSize/(1024 * 1024) + " MB";
 }
 
 }
